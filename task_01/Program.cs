@@ -12,8 +12,12 @@ string enter = Console.ReadLine();
 Console.WriteLine(enter);
 string[] array = enter.Split(" ", StringSplitOptions.RemoveEmptyEntries);
 Console.WriteLine(String.Join(",", array));
-int result = Console.WriteLine(CountNums(array));
 
+
+Console.WriteLine(CountNums(array));
+
+//int result = CountNums(array);
+//Console.WriteLine(result);
 int CountNums(string[] array){
     int count = 0;
     foreach (string item in array)
